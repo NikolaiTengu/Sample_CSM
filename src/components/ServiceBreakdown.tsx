@@ -12,12 +12,12 @@ interface ServiceBreakdownProps {
   data: ServiceData[];
 }
 
-const COLORS = ['rgb(187,0,0)', 'rgb(220,20,20)', 'rgb(150,0,0)', 'rgb(200,50,50)', 'rgb(170,10,10)']
+const COLORS = ['rgb(139,34,34)', 'rgb(160,40,40)', 'rgb(110,25,25)', 'rgb(145,45,45)', 'rgb(125,28,28)']
 
 export default function ServiceBreakdown({ data }: ServiceBreakdownProps) {
   return (
     <div className="scp-card p-6">
-      <h2 className="text-xl font-bold text-[rgb(187,0,0)] scp-header mb-6 flex items-center gap-2">
+      <h2 className="text-xl font-bold text-[rgb(139,34,34)] scp-header mb-6 flex items-center gap-2">
         <span className="text-2xl">■</span> SERVICE CLASSIFICATION
       </h2>
       <p className="text-xs text-[rgb(160,160,160)] mb-4 tracking-wider">CATEGORICAL DISTRIBUTION</p>
@@ -39,11 +39,11 @@ export default function ServiceBreakdown({ data }: ServiceBreakdownProps) {
           <Tooltip
             contentStyle={{
               backgroundColor: 'rgb(28,28,28)',
-              border: '2px solid rgb(187,0,0)',
+              border: '2px solid rgb(139,34,34)',
               borderRadius: '0',
               color: 'rgb(240,240,240)',
               fontFamily: 'Courier Prime, monospace',
-              boxShadow: '0 0 20px rgba(187,0,0,0.3)',
+              boxShadow: '0 0 20px rgba(139,34,34,0.3)',
             }}
           />
           <Legend 
@@ -53,7 +53,7 @@ export default function ServiceBreakdown({ data }: ServiceBreakdownProps) {
               color: 'rgb(160,160,160)',
             }}
           />
-          <Bar dataKey="count" fill="rgb(187,0,0)" name="RESPONSES" radius={[0, 0, 0, 0]}>
+          <Bar dataKey="count" fill="rgb(139,34,34)" name="RESPONSES" radius={[0, 0, 0, 0]}>
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
@@ -70,7 +70,7 @@ export default function ServiceBreakdown({ data }: ServiceBreakdownProps) {
               />
               <span className="text-[rgb(160,160,160)] font-mono text-xs tracking-wide">{service.name}</span>
             </div>
-            <span className="font-bold text-[rgb(187,0,0)] font-mono text-xs tracking-wider">
+            <span className="font-bold text-[rgb(139,34,34)] font-mono text-xs tracking-wider">
               AVG: {service.avgRating.toFixed(1)}/5
             </span>
           </div>

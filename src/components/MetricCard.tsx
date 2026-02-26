@@ -22,7 +22,7 @@ export default function MetricCard({
     <div className="scp-card p-6 transition-all duration-300">
       <div className="flex items-start justify-between mb-4">
         <h3 className="text-xs font-bold text-[rgb(160,160,160)] tracking-widest uppercase">{title}</h3>
-        {icon && <span className="text-3xl text-[rgb(187,0,0)]">{icon}</span>}
+        {icon && <span className="text-3xl text-[rgb(139,34,34)]">{icon}</span>}
       </div>
       <div className="flex items-baseline gap-2 mb-3">
         <p className="text-4xl font-bold text-[rgb(240,240,240)] tracking-wide">{value}</p>
