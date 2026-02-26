@@ -118,12 +118,12 @@ export default function ContactUs() {
   return (
     <div className="min-h-screen bg-[rgb(17,17,17)]">
       {/* Top Security Banner */}
-      <div className="bg-[rgb(139,34,34)] text-white text-center py-1 text-xs font-bold tracking-widest">
+      <div className="bg-[rgb(230,200,80)] text-white text-center py-1 text-xs font-bold tracking-widest">
         ⚠ CLASSIFIED - LEVEL 2 CLEARANCE REQUIRED ⚠
       </div>
 
       {/* Header */}
-      <header className="bg-[rgb(28,28,28)] border-b-4 border-[rgb(139,34,34)] shadow-[0_0_20px_rgba(139,34,34,0.3)]">
+      <header className="bg-[rgb(28,28,28)] border-b-4 border-[rgb(230,200,80)] shadow-[0_0_20px_rgba(230,200,80,0.3)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div className="flex items-center gap-6">
@@ -132,10 +132,10 @@ export default function ContactUs() {
                 alt="RAISA Logo" 
                 width={80} 
                 height={80}
-                className="filter drop-shadow-[0_0_10px_rgba(139,34,34,0.5)]"
+                className="filter drop-shadow-[0_0_10px_rgba(230,200,80,0.5)]"
               />
               <div>
-                <h1 className="text-2xl md:text-3xl font-bold text-[rgb(139,34,34)] scp-header">
+                <h1 className="text-2xl md:text-3xl font-bold text-[rgb(230,200,80)] scp-header">
                   SCP FOUNDATION
                 </h1>
                 <p className="text-sm md:text-base text-[rgb(160,160,160)] mt-1 tracking-wide">
@@ -150,7 +150,7 @@ export default function ContactUs() {
               <div className="classified-stamp mb-2">INTERNAL</div>
               <p className="text-xs text-[rgb(160,160,160)]">DOCUMENT TYPE</p>
               <p className="text-lg font-semibold text-[rgb(240,240,240)] tracking-wider">DIRECTORY</p>
-              <p className="text-xs text-[rgb(139,34,34)] font-bold mt-1">RAISA-CONT-001</p>
+              <p className="text-xs text-[rgb(230,200,80)] font-bold mt-1">RAISA-CONT-001</p>
             </div>
           </div>
         </div>
@@ -159,8 +159,8 @@ export default function ContactUs() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Security Notice */}
-        <div className="scp-card p-4 mb-6 border-[rgb(139,34,34)]">
-          <p className="text-[rgb(139,34,34)] text-sm font-bold">
+        <div className="scp-card p-4 mb-6 border-[rgb(230,200,80)]">
+          <p className="text-[rgb(230,200,80)] text-sm font-bold">
             ⚠ NOTICE: This directory is for authorized Foundation personnel only. 
             All communications with RAISA are logged and monitored for security purposes.
           </p>
@@ -168,7 +168,7 @@ export default function ContactUs() {
 
         {/* Introduction */}
         <div className="scp-card p-6 mb-8">
-          <h2 className="text-2xl font-bold text-[rgb(139,34,34)] scp-header mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-[rgb(230,200,80)] scp-header mb-4 flex items-center gap-2">
             <span className="text-3xl">■</span> HOW TO CONTACT RAISA
           </h2>
           
@@ -185,15 +185,15 @@ export default function ContactUs() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
             <div className="bg-[rgb(28,28,28)] border border-[rgb(100,100,100)] p-4 text-center">
-              <div className="text-3xl font-bold text-[rgb(139,34,34)] mb-2">24/7</div>
+              <div className="text-3xl font-bold text-[rgb(230,200,80)] mb-2">24/7</div>
               <div className="text-xs text-[rgb(160,160,160)]">EMERGENCY SUPPORT</div>
             </div>
             <div className="bg-[rgb(28,28,28)] border border-[rgb(100,100,100)] p-4 text-center">
-              <div className="text-3xl font-bold text-[rgb(139,34,34)] mb-2">&lt;2h</div>
+              <div className="text-3xl font-bold text-[rgb(230,200,80)] mb-2">&lt;2h</div>
               <div className="text-xs text-[rgb(160,160,160)]">AVG RESPONSE TIME</div>
             </div>
             <div className="bg-[rgb(28,28,28)] border border-[rgb(100,100,100)] p-4 text-center">
-              <div className="text-3xl font-bold text-[rgb(139,34,34)] mb-2">6</div>
+              <div className="text-3xl font-bold text-[rgb(230,200,80)] mb-2">6</div>
               <div className="text-xs text-[rgb(160,160,160)]">SPECIALIZED DIVISIONS</div>
             </div>
           </div>
@@ -203,7 +203,7 @@ export default function ContactUs() {
         <div className="text-center mb-8">
           <button
             onClick={() => setShowForm(true)}
-            className="bg-[rgb(139,34,34)] hover:bg-[rgb(110,25,25)] text-white font-bold py-4 px-8 text-base transition-colors inline-flex items-center gap-3"
+            className="bg-[rgb(230,200,80)] hover:bg-[rgb(200,170,50)] text-white font-bold py-4 px-8 text-base transition-colors inline-flex items-center gap-3"
           >
             <span className="text-xl">►</span> SUBMIT CONTACT REQUEST
           </button>
@@ -214,7 +214,7 @@ export default function ContactUs() {
 
         {/* Division Contact Information */}
         <div className="mb-8">
-          <h2 className="text-xl font-bold text-[rgb(139,34,34)] scp-header mb-4 flex items-center gap-2">
+          <h2 className="text-xl font-bold text-[rgb(230,200,80)] scp-header mb-4 flex items-center gap-2">
             <span className="text-2xl">■</span> DIVISION CONTACTS
           </h2>
           
@@ -226,19 +226,19 @@ export default function ContactUs() {
                 
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <span className="text-[rgb(139,34,34)] font-bold text-sm min-w-[80px]">EMAIL:</span>
+                    <span className="text-[rgb(230,200,80)] font-bold text-sm min-w-[80px]">EMAIL:</span>
                     <span className="text-[rgb(220,220,220)] text-sm">{division.email}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[rgb(139,34,34)] font-bold text-sm min-w-[80px]">EXTENSION:</span>
+                    <span className="text-[rgb(230,200,80)] font-bold text-sm min-w-[80px]">EXTENSION:</span>
                     <span className="text-[rgb(220,220,220)] text-sm">{division.extension}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[rgb(139,34,34)] font-bold text-sm min-w-[80px]">HOURS:</span>
+                    <span className="text-[rgb(230,200,80)] font-bold text-sm min-w-[80px]">HOURS:</span>
                     <span className="text-[rgb(220,220,220)] text-sm">{division.hours}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[rgb(139,34,34)] font-bold text-sm min-w-[80px]">RESPONSE:</span>
+                    <span className="text-[rgb(230,200,80)] font-bold text-sm min-w-[80px]">RESPONSE:</span>
                     <span className="text-[rgb(220,220,220)] text-sm">{division.responseTime}</span>
                   </div>
                 </div>
@@ -248,23 +248,23 @@ export default function ContactUs() {
         </div>
 
         {/* Emergency Contacts */}
-        <div className="scp-card p-6 mb-8 border-2 border-[rgb(139,34,34)]">
-          <h2 className="text-xl font-bold text-[rgb(139,34,34)] scp-header mb-4 flex items-center gap-2">
+        <div className="scp-card p-6 mb-8 border-2 border-[rgb(230,200,80)]">
+          <h2 className="text-xl font-bold text-[rgb(230,200,80)] scp-header mb-4 flex items-center gap-2">
             <span className="text-2xl">⚠</span> EMERGENCY PROTOCOLS
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-[rgb(28,28,28)] border-l-4 border-[rgb(139,34,34)] p-5">
-              <h3 className="text-lg font-bold text-[rgb(139,34,34)] mb-3">SECURITY BREACH</h3>
+            <div className="bg-[rgb(28,28,28)] border-l-4 border-[rgb(230,200,80)] p-5">
+              <h3 className="text-lg font-bold text-[rgb(230,200,80)] mb-3">SECURITY BREACH</h3>
               <p className="text-sm text-[rgb(220,220,220)] mb-4">
                 Unauthorized access, data breach, or information security incident
               </p>
               <div className="space-y-2 text-sm">
                 <p className="text-[rgb(220,220,220)]">
-                  <span className="font-bold text-[rgb(139,34,34)]">HOTLINE:</span> 6-9911
+                  <span className="font-bold text-[rgb(230,200,80)]">HOTLINE:</span> 6-9911
                 </p>
                 <p className="text-[rgb(220,220,220)]">
-                  <span className="font-bold text-[rgb(139,34,34)]">EMAIL:</span> security-emergency@raisa.foundation.scp
+                  <span className="font-bold text-[rgb(230,200,80)]">EMAIL:</span> security-emergency@raisa.foundation.scp
                 </p>
                 <p className="text-xs text-[rgb(160,160,160)] mt-3">
                   Response Time: IMMEDIATE
@@ -272,17 +272,17 @@ export default function ContactUs() {
               </div>
             </div>
 
-            <div className="bg-[rgb(28,28,28)] border-l-4 border-[rgb(139,34,34)] p-5">
-              <h3 className="text-lg font-bold text-[rgb(139,34,34)] mb-3">CRITICAL SYSTEM FAILURE</h3>
+            <div className="bg-[rgb(28,28,28)] border-l-4 border-[rgb(230,200,80)] p-5">
+              <h3 className="text-lg font-bold text-[rgb(230,200,80)] mb-3">CRITICAL SYSTEM FAILURE</h3>
               <p className="text-sm text-[rgb(220,220,220)] mb-4">
                 Database outage, system crash affecting containment operations
               </p>
               <div className="space-y-2 text-sm">
                 <p className="text-[rgb(220,220,220)]">
-                  <span className="font-bold text-[rgb(139,34,34)]">HOTLINE:</span> 6-9922
+                  <span className="font-bold text-[rgb(230,200,80)]">HOTLINE:</span> 6-9922
                 </p>
                 <p className="text-[rgb(220,220,220)]">
-                  <span className="font-bold text-[rgb(139,34,34)]">EMAIL:</span> tech-emergency@raisa.foundation.scp
+                  <span className="font-bold text-[rgb(230,200,80)]">EMAIL:</span> tech-emergency@raisa.foundation.scp
                 </p>
                 <p className="text-xs text-[rgb(160,160,160)] mt-3">
                   Response Time: IMMEDIATE
@@ -293,7 +293,7 @@ export default function ContactUs() {
 
           <div className="mt-6 bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] p-4">
             <p className="text-xs text-[rgb(220,220,220)] leading-relaxed">
-              <strong className="text-[rgb(139,34,34)]">EMERGENCY PROTOCOL:</strong> For Class-A emergencies 
+              <strong className="text-[rgb(230,200,80)]">EMERGENCY PROTOCOL:</strong> For Class-A emergencies 
               affecting containment operations, contact RAISA Emergency Response immediately. All emergency 
               calls are prioritized and routed directly to on-duty senior staff regardless of time or location.
             </p>
@@ -303,7 +303,7 @@ export default function ContactUs() {
         {/* Office Locations */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div className="scp-card p-6">
-            <h3 className="text-lg font-bold text-[rgb(139,34,34)] mb-4">PRIMARY OFFICE</h3>
+            <h3 className="text-lg font-bold text-[rgb(230,200,80)] mb-4">PRIMARY OFFICE</h3>
             <div className="space-y-3 text-sm">
               <div>
                 <p className="text-[rgb(160,160,160)] mb-1">LOCATION</p>
@@ -326,24 +326,24 @@ export default function ContactUs() {
           </div>
 
           <div className="scp-card p-6">
-            <h3 className="text-lg font-bold text-[rgb(139,34,34)] mb-4">SECURE COMMUNICATION</h3>
+            <h3 className="text-lg font-bold text-[rgb(230,200,80)] mb-4">SECURE COMMUNICATION</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-3">
-                <span className="text-[rgb(139,34,34)] text-xl">◆</span>
+                <span className="text-[rgb(230,200,80)] text-xl">◆</span>
                 <div>
                   <p className="text-[rgb(220,220,220)] font-bold mb-1">Foundation Intranet Portal</p>
                   <p className="text-[rgb(160,160,160)] text-xs">https://internal.foundation.scp/raisa</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-[rgb(139,34,34)] text-xl">◆</span>
+                <span className="text-[rgb(230,200,80)] text-xl">◆</span>
                 <div>
                   <p className="text-[rgb(220,220,220)] font-bold mb-1">Secure Messaging System</p>
                   <p className="text-[rgb(160,160,160)] text-xs">Available through SCiPNet terminals</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-[rgb(139,34,34)] text-xl">◆</span>
+                <span className="text-[rgb(230,200,80)] text-xl">◆</span>
                 <div>
                   <p className="text-[rgb(220,220,220)] font-bold mb-1">Document Request System</p>
                   <p className="text-[rgb(160,160,160)] text-xs">Submit through official channels only</p>
@@ -355,7 +355,7 @@ export default function ContactUs() {
 
         {/* FAQ */}
         <div className="scp-card p-6 mb-8">
-          <h2 className="text-xl font-bold text-[rgb(139,34,34)] scp-header mb-4 flex items-center gap-2">
+          <h2 className="text-xl font-bold text-[rgb(230,200,80)] scp-header mb-4 flex items-center gap-2">
             <span className="text-2xl">■</span> FREQUENTLY ASKED QUESTIONS
           </h2>
           
@@ -405,14 +405,14 @@ export default function ContactUs() {
         </div>
 
         {/* Footer */}
-        <div className="mt-8 pt-6 border-t-2 border-[rgb(139,34,34)] text-center">
+        <div className="mt-8 pt-6 border-t-2 border-[rgb(230,200,80)] text-center">
           <p className="text-[rgb(160,160,160)] text-xs">
             SCP FOUNDATION - RECORDKEEPING AND INFORMATION SECURITY ADMINISTRATION (RAISA)
           </p>
           <p className="text-[rgb(160,160,160)] text-xs mt-1">
             All communications monitored and logged for security purposes
           </p>
-          <p className="text-[rgb(139,34,34)] text-xs mt-2 font-bold">
+          <p className="text-[rgb(230,200,80)] text-xs mt-2 font-bold">
             INTERNAL USE ONLY - FOUNDATION PERSONNEL ONLY
           </p>
         </div>
@@ -421,9 +421,9 @@ export default function ContactUs() {
       {/* Contact Form Modal */}
       {showForm && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4 overflow-y-auto">
-          <div className="bg-[rgb(28,28,28)] border-4 border-[rgb(139,34,34)] max-w-3xl w-full my-8 shadow-[0_0_30px_rgba(139,34,34,0.5)]">
+          <div className="bg-[rgb(28,28,28)] border-4 border-[rgb(230,200,80)] max-w-3xl w-full my-8 shadow-[0_0_30px_rgba(230,200,80,0.5)]">
             {/* Modal Header */}
-            <div className="bg-[rgb(139,34,34)] px-6 py-4 flex items-center justify-between">
+            <div className="bg-[rgb(230,200,80)] px-6 py-4 flex items-center justify-between">
               <div>
                 <h3 className="text-xl font-bold text-white">RAISA CONTACT REQUEST</h3>
                 <p className="text-sm text-white/80 mt-1">Form ID: RAISA-CR-{Date.now().toString().slice(-8)}</p>
@@ -444,13 +444,13 @@ export default function ContactUs() {
                 <form onSubmit={handleSubmit}>
                   {/* Personal Information */}
                   <div className="mb-6">
-                    <h4 className="text-sm font-bold text-[rgb(139,34,34)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
+                    <h4 className="text-sm font-bold text-[rgb(230,200,80)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
                       ■ REQUESTER INFORMATION
                     </h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          FULL NAME <span className="text-[rgb(139,34,34)]">*</span>
+                          FULL NAME <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="text"
@@ -458,12 +458,12 @@ export default function ContactUs() {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          EMPLOYEE ID <span className="text-[rgb(139,34,34)]">*</span>
+                          EMPLOYEE ID <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="text"
@@ -471,12 +471,12 @@ export default function ContactUs() {
                           value={formData.employeeId}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          SITE <span className="text-[rgb(139,34,34)]">*</span>
+                          SITE <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="text"
@@ -484,12 +484,12 @@ export default function ContactUs() {
                           value={formData.site}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          DEPARTMENT <span className="text-[rgb(139,34,34)]">*</span>
+                          DEPARTMENT <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="text"
@@ -497,12 +497,12 @@ export default function ContactUs() {
                           value={formData.department}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          EMAIL <span className="text-[rgb(139,34,34)]">*</span>
+                          EMAIL <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="email"
@@ -510,12 +510,12 @@ export default function ContactUs() {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          PHONE EXTENSION <span className="text-[rgb(139,34,34)]">*</span>
+                          PHONE EXTENSION <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="text"
@@ -523,19 +523,19 @@ export default function ContactUs() {
                           value={formData.phone}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          CLEARANCE LEVEL <span className="text-[rgb(139,34,34)]">*</span>
+                          CLEARANCE LEVEL <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <select
                           name="clearanceLevel"
                           value={formData.clearanceLevel}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         >
                           <option value="">Select Level</option>
                           <option value="1">Level 1</option>
@@ -547,14 +547,14 @@ export default function ContactUs() {
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          CONTACT DIVISION <span className="text-[rgb(139,34,34)]">*</span>
+                          CONTACT DIVISION <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <select
                           name="contactDivision"
                           value={formData.contactDivision}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         >
                           <option value="">Select Division</option>
                           <option value="records">Records & Archival Office</option>
@@ -570,21 +570,21 @@ export default function ContactUs() {
 
                   {/* Request Details */}
                   <div className="mb-6">
-                    <h4 className="text-sm font-bold text-[rgb(139,34,34)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
+                    <h4 className="text-sm font-bold text-[rgb(230,200,80)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
                       ■ REQUEST DETAILS
                     </h4>
                     <div className="space-y-4">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="md:col-span-1">
                           <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                            PRIORITY LEVEL <span className="text-[rgb(139,34,34)]">*</span>
+                            PRIORITY LEVEL <span className="text-[rgb(230,200,80)]">*</span>
                           </label>
                           <select
                             name="priority"
                             value={formData.priority}
                             onChange={handleInputChange}
                             required
-                            className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                            className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                           >
                             <option value="low">Low - Routine Inquiry</option>
                             <option value="normal">Normal - Standard Request</option>
@@ -594,7 +594,7 @@ export default function ContactUs() {
                         </div>
                         <div className="md:col-span-1">
                           <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                            SUBJECT <span className="text-[rgb(139,34,34)]">*</span>
+                            SUBJECT <span className="text-[rgb(230,200,80)]">*</span>
                           </label>
                           <input
                             type="text"
@@ -602,14 +602,14 @@ export default function ContactUs() {
                             value={formData.subject}
                             onChange={handleInputChange}
                             required
-                            className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                            className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                             placeholder="Brief description of request"
                           />
                         </div>
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          MESSAGE <span className="text-[rgb(139,34,34)]">*</span>
+                          MESSAGE <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <textarea
                           name="message"
@@ -617,7 +617,7 @@ export default function ContactUs() {
                           onChange={handleInputChange}
                           required
                           rows={6}
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none resize-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none resize-none"
                           placeholder="Provide detailed information about your request..."
                         />
                       </div>
@@ -625,7 +625,7 @@ export default function ContactUs() {
                   </div>
 
                   {/* Disclaimer */}
-                  <div className="bg-[rgb(17,17,17)] border-l-4 border-[rgb(139,34,34)] p-4 mb-6">
+                  <div className="bg-[rgb(17,17,17)] border-l-4 border-[rgb(230,200,80)] p-4 mb-6">
                     <p className="text-xs text-[rgb(220,220,220)] leading-relaxed">
                       By submitting this request, I acknowledge that all communications with RAISA are monitored 
                       and logged for security purposes. I certify that the information provided is accurate and 
@@ -637,7 +637,7 @@ export default function ContactUs() {
                   <div className="flex gap-4">
                     <button
                       type="submit"
-                      className="flex-1 bg-[rgb(139,34,34)] hover:bg-[rgb(110,25,25)] text-white font-bold py-3 px-6 text-sm transition-colors"
+                      className="flex-1 bg-[rgb(230,200,80)] hover:bg-[rgb(200,170,50)] text-white font-bold py-3 px-6 text-sm transition-colors"
                     >
                       ► SUBMIT REQUEST
                     </button>
@@ -656,8 +656,8 @@ export default function ContactUs() {
               ) : (
                 // Success Message
                 <div className="text-center py-12">
-                  <div className="text-6xl text-[rgb(139,34,34)] mb-6">✓</div>
-                  <h3 className="text-2xl font-bold text-[rgb(139,34,34)] mb-4">REQUEST SUBMITTED</h3>
+                  <div className="text-6xl text-[rgb(230,200,80)] mb-6">✓</div>
+                  <h3 className="text-2xl font-bold text-[rgb(230,200,80)] mb-4">REQUEST SUBMITTED</h3>
                   <p className="text-[rgb(220,220,220)] mb-2">
                     Your contact request has been received by RAISA.
                   </p>
@@ -666,7 +666,7 @@ export default function ContactUs() {
                   </p>
                   <div className="bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] p-4 max-w-lg mx-auto text-left">
                     <p className="text-xs text-[rgb(220,220,220)] leading-relaxed">
-                      <strong className="text-[rgb(139,34,34)]">NEXT STEPS:</strong><br/>
+                      <strong className="text-[rgb(230,200,80)]">NEXT STEPS:</strong><br/>
                       • Message routed to {formData.contactDivision} division<br/>
                       • You will receive acknowledgment via email within 1 hour<br/>
                       • Response time varies by priority and division<br/>
@@ -678,7 +678,7 @@ export default function ContactUs() {
                       setShowForm(false)
                       setFormSubmitted(false)
                     }}
-                    className="mt-6 bg-[rgb(139,34,34)] hover:bg-[rgb(110,25,25)] text-white font-bold py-3 px-6 text-sm transition-colors"
+                    className="mt-6 bg-[rgb(230,200,80)] hover:bg-[rgb(200,170,50)] text-white font-bold py-3 px-6 text-sm transition-colors"
                   >
                     CLOSE
                   </button>

@@ -333,12 +333,12 @@ export default function Careers() {
   return (
     <div className="min-h-screen bg-[rgb(17,17,17)]">
       {/* Top Security Banner */}
-      <div className="bg-[rgb(139,34,34)] text-white text-center py-1 text-xs font-bold tracking-widest">
+      <div className="bg-[rgb(230,200,80)] text-white text-center py-1 text-xs font-bold tracking-widest">
         ⚠ CLASSIFIED - LEVEL 2 CLEARANCE REQUIRED ⚠
       </div>
 
       {/* Header */}
-      <header className="bg-[rgb(28,28,28)] border-b-4 border-[rgb(139,34,34)] shadow-[0_0_20px_rgba(139,34,34,0.3)]">
+      <header className="bg-[rgb(28,28,28)] border-b-4 border-[rgb(230,200,80)] shadow-[0_0_20px_rgba(230,200,80,0.3)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div className="flex items-center gap-6">
@@ -347,10 +347,10 @@ export default function Careers() {
                 alt="RAISA Logo" 
                 width={80} 
                 height={80}
-                className="filter drop-shadow-[0_0_10px_rgba(139,34,34,0.5)]"
+                className="filter drop-shadow-[0_0_10px_rgba(230,200,80,0.5)]"
               />
               <div>
-                <h1 className="text-2xl md:text-3xl font-bold text-[rgb(139,34,34)] scp-header">
+                <h1 className="text-2xl md:text-3xl font-bold text-[rgb(230,200,80)] scp-header">
                   SCP FOUNDATION
                 </h1>
                 <p className="text-sm md:text-base text-[rgb(160,160,160)] mt-1 tracking-wide">
@@ -365,7 +365,7 @@ export default function Careers() {
               <div className="classified-stamp mb-2">INTERNAL</div>
               <p className="text-xs text-[rgb(160,160,160)]">UPDATED</p>
               <p className="text-lg font-semibold text-[rgb(240,240,240)] tracking-wider">FEB 2026</p>
-              <p className="text-xs text-[rgb(139,34,34)] font-bold mt-1">RAISA-HR-026</p>
+              <p className="text-xs text-[rgb(230,200,80)] font-bold mt-1">RAISA-HR-026</p>
             </div>
           </div>
         </div>
@@ -374,8 +374,8 @@ export default function Careers() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Security Notice */}
-        <div className="scp-card p-4 mb-6 border-[rgb(139,34,34)]">
-          <p className="text-[rgb(139,34,34)] text-sm font-bold">
+        <div className="scp-card p-4 mb-6 border-[rgb(230,200,80)]">
+          <p className="text-[rgb(230,200,80)] text-sm font-bold">
             ⚠ NOTICE: All positions listed are restricted to current Foundation personnel. 
             External recruitment is not permitted. Applicants must possess appropriate clearance levels 
             and pass RAISA security screening.
@@ -384,7 +384,7 @@ export default function Careers() {
 
         {/* Introduction */}
         <div className="scp-card p-6 mb-8">
-          <h2 className="text-2xl font-bold text-[rgb(139,34,34)] scp-header mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-[rgb(230,200,80)] scp-header mb-4 flex items-center gap-2">
             <span className="text-3xl">■</span> JOIN RAISA
           </h2>
           
@@ -404,15 +404,15 @@ export default function Careers() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
             <div className="bg-[rgb(28,28,28)] border border-[rgb(100,100,100)] p-4 text-center">
-              <div className="text-3xl font-bold text-[rgb(139,34,34)] mb-2">{jobPostings.length}</div>
+              <div className="text-3xl font-bold text-[rgb(230,200,80)] mb-2">{jobPostings.length}</div>
               <div className="text-xs text-[rgb(160,160,160)]">OPEN POSITIONS</div>
             </div>
             <div className="bg-[rgb(28,28,28)] border border-[rgb(100,100,100)] p-4 text-center">
-              <div className="text-3xl font-bold text-[rgb(139,34,34)] mb-2">6</div>
+              <div className="text-3xl font-bold text-[rgb(230,200,80)] mb-2">6</div>
               <div className="text-xs text-[rgb(160,160,160)]">DIVISIONS HIRING</div>
             </div>
             <div className="bg-[rgb(28,28,28)] border border-[rgb(100,100,100)] p-4 text-center">
-              <div className="text-3xl font-bold text-[rgb(139,34,34)] mb-2">24/7</div>
+              <div className="text-3xl font-bold text-[rgb(230,200,80)] mb-2">24/7</div>
               <div className="text-xs text-[rgb(160,160,160)]">OPERATIONS</div>
             </div>
           </div>
@@ -420,7 +420,7 @@ export default function Careers() {
 
         {/* Job Listings */}
         <div className="mb-8">
-          <h2 className="text-xl font-bold text-[rgb(139,34,34)] scp-header mb-4 flex items-center gap-2">
+          <h2 className="text-xl font-bold text-[rgb(230,200,80)] scp-header mb-4 flex items-center gap-2">
             <span className="text-2xl">■</span> CURRENT OPENINGS
           </h2>
           
@@ -433,7 +433,7 @@ export default function Careers() {
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="text-xl font-bold text-[rgb(220,220,220)]">{job.title}</h3>
                       <span className={`text-xs font-bold px-3 py-1 ${
-                        job.status === 'Urgent' ? 'bg-[rgb(139,34,34)] text-white' :
+                        job.status === 'Urgent' ? 'bg-[rgb(230,200,80)] text-white' :
                         job.status === 'Closing Soon' ? 'bg-yellow-600 text-white' :
                         'bg-[rgb(100,100,100)] text-white'
                       }`}>
@@ -442,16 +442,16 @@ export default function Careers() {
                     </div>
                     <div className="flex items-center gap-4 text-sm text-[rgb(160,160,160)] flex-wrap">
                       <span className="flex items-center gap-1">
-                        <span className="text-[rgb(139,34,34)]">◆</span> {job.division}
+                        <span className="text-[rgb(230,200,80)]">◆</span> {job.division}
                       </span>
                       <span className="flex items-center gap-1">
-                        <span className="text-[rgb(139,34,34)]">◆</span> Level {job.clearanceLevel} Clearance
+                        <span className="text-[rgb(230,200,80)]">◆</span> Level {job.clearanceLevel} Clearance
                       </span>
                       <span className="flex items-center gap-1">
-                        <span className="text-[rgb(139,34,34)]">◆</span> {job.employmentType}
+                        <span className="text-[rgb(230,200,80)]">◆</span> {job.employmentType}
                       </span>
                     </div>
-                    <p className="text-xs text-[rgb(139,34,34)] font-bold mt-2">{job.id}</p>
+                    <p className="text-xs text-[rgb(230,200,80)] font-bold mt-2">{job.id}</p>
                   </div>
                   <div className="text-right">
                     <p className="text-xs text-[rgb(160,160,160)]">POSTED</p>
@@ -469,11 +469,11 @@ export default function Careers() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Responsibilities */}
                   <div>
-                    <h4 className="text-sm font-bold text-[rgb(139,34,34)] mb-2">KEY RESPONSIBILITIES</h4>
+                    <h4 className="text-sm font-bold text-[rgb(230,200,80)] mb-2">KEY RESPONSIBILITIES</h4>
                     <ul className="space-y-1">
                       {job.responsibilities.map((resp, index) => (
                         <li key={index} className="text-xs text-[rgb(220,220,220)] flex items-start gap-2">
-                          <span className="text-[rgb(139,34,34)] mt-0.5">▸</span>
+                          <span className="text-[rgb(230,200,80)] mt-0.5">▸</span>
                           <span>{resp}</span>
                         </li>
                       ))}
@@ -482,21 +482,21 @@ export default function Careers() {
 
                   {/* Requirements */}
                   <div>
-                    <h4 className="text-sm font-bold text-[rgb(139,34,34)] mb-2">REQUIREMENTS</h4>
+                    <h4 className="text-sm font-bold text-[rgb(230,200,80)] mb-2">REQUIREMENTS</h4>
                     <ul className="space-y-1 mb-4">
                       {job.requirements.map((req, index) => (
                         <li key={index} className="text-xs text-[rgb(220,220,220)] flex items-start gap-2">
-                          <span className="text-[rgb(139,34,34)] mt-0.5">▸</span>
+                          <span className="text-[rgb(230,200,80)] mt-0.5">▸</span>
                           <span>{req}</span>
                         </li>
                       ))}
                     </ul>
 
-                    <h4 className="text-sm font-bold text-[rgb(139,34,34)] mb-2">PREFERRED QUALIFICATIONS</h4>
+                    <h4 className="text-sm font-bold text-[rgb(230,200,80)] mb-2">PREFERRED QUALIFICATIONS</h4>
                     <ul className="space-y-1">
                       {job.qualifications.map((qual, index) => (
                         <li key={index} className="text-xs text-[rgb(220,220,220)] flex items-start gap-2">
-                          <span className="text-[rgb(139,34,34)] mt-0.5">▸</span>
+                          <span className="text-[rgb(230,200,80)] mt-0.5">▸</span>
                           <span>{qual}</span>
                         </li>
                       ))}
@@ -508,7 +508,7 @@ export default function Careers() {
                 <div className="mt-6 pt-4 border-t border-[rgb(100,100,100)]">
                   <button 
                     onClick={() => handleOpenForm(job)}
-                    className="bg-[rgb(139,34,34)] hover:bg-[rgb(110,25,25)] text-white font-bold py-3 px-6 text-sm transition-colors"
+                    className="bg-[rgb(230,200,80)] hover:bg-[rgb(200,170,50)] text-white font-bold py-3 px-6 text-sm transition-colors"
                   >
                     ► SUBMIT TRANSFER REQUEST
                   </button>
@@ -524,31 +524,31 @@ export default function Careers() {
         {/* Benefits & Information */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div className="scp-card p-6">
-            <h3 className="text-lg font-bold text-[rgb(139,34,34)] mb-4">WHY JOIN RAISA?</h3>
+            <h3 className="text-lg font-bold text-[rgb(230,200,80)] mb-4">WHY JOIN RAISA?</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <span className="text-[rgb(139,34,34)] text-xl">◆</span>
+                <span className="text-[rgb(230,200,80)] text-xl">◆</span>
                 <div>
                   <p className="text-sm font-bold text-[rgb(220,220,220)]">Critical Mission</p>
                   <p className="text-xs text-[rgb(160,160,160)]">Work at the heart of Foundation operations</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[rgb(139,34,34)] text-xl">◆</span>
+                <span className="text-[rgb(230,200,80)] text-xl">◆</span>
                 <div>
                   <p className="text-sm font-bold text-[rgb(220,220,220)]">Career Advancement</p>
                   <p className="text-xs text-[rgb(160,160,160)]">Clear pathways to senior positions</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[rgb(139,34,34)] text-xl">◆</span>
+                <span className="text-[rgb(230,200,80)] text-xl">◆</span>
                 <div>
                   <p className="text-sm font-bold text-[rgb(220,220,220)]">Specialized Training</p>
                   <p className="text-xs text-[rgb(160,160,160)]">Access to advanced technical and security training</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[rgb(139,34,34)] text-xl">◆</span>
+                <span className="text-[rgb(230,200,80)] text-xl">◆</span>
                 <div>
                   <p className="text-sm font-bold text-[rgb(220,220,220)]">Inter-Site Opportunities</p>
                   <p className="text-xs text-[rgb(160,160,160)]">Possibility of assignment to multiple Foundation sites</p>
@@ -558,10 +558,10 @@ export default function Careers() {
           </div>
 
           <div className="scp-card p-6">
-            <h3 className="text-lg font-bold text-[rgb(139,34,34)] mb-4">APPLICATION PROCESS</h3>
+            <h3 className="text-lg font-bold text-[rgb(230,200,80)] mb-4">APPLICATION PROCESS</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="bg-[rgb(139,34,34)] text-white font-bold text-sm w-8 h-8 flex items-center justify-center flex-shrink-0">
+                <div className="bg-[rgb(230,200,80)] text-white font-bold text-sm w-8 h-8 flex items-center justify-center flex-shrink-0">
                   1
                 </div>
                 <div>
@@ -570,7 +570,7 @@ export default function Careers() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-[rgb(139,34,34)] text-white font-bold text-sm w-8 h-8 flex items-center justify-center flex-shrink-0">
+                <div className="bg-[rgb(230,200,80)] text-white font-bold text-sm w-8 h-8 flex items-center justify-center flex-shrink-0">
                   2
                 </div>
                 <div>
@@ -579,7 +579,7 @@ export default function Careers() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-[rgb(139,34,34)] text-white font-bold text-sm w-8 h-8 flex items-center justify-center flex-shrink-0">
+                <div className="bg-[rgb(230,200,80)] text-white font-bold text-sm w-8 h-8 flex items-center justify-center flex-shrink-0">
                   3
                 </div>
                 <div>
@@ -588,7 +588,7 @@ export default function Careers() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-[rgb(139,34,34)] text-white font-bold text-sm w-8 h-8 flex items-center justify-center flex-shrink-0">
+                <div className="bg-[rgb(230,200,80)] text-white font-bold text-sm w-8 h-8 flex items-center justify-center flex-shrink-0">
                   4
                 </div>
                 <div>
@@ -602,7 +602,7 @@ export default function Careers() {
 
         {/* Contact */}
         <div className="scp-card p-6 text-center">
-          <h3 className="text-lg font-bold text-[rgb(139,34,34)] mb-3">QUESTIONS ABOUT POSITIONS?</h3>
+          <h3 className="text-lg font-bold text-[rgb(230,200,80)] mb-3">QUESTIONS ABOUT POSITIONS?</h3>
           <p className="text-sm text-[rgb(220,220,220)] mb-4">
             Contact RAISA Human Resources through Foundation Internal Communications
           </p>
@@ -613,14 +613,14 @@ export default function Careers() {
         </div>
 
         {/* Footer */}
-        <div className="mt-8 pt-6 border-t-2 border-[rgb(139,34,34)] text-center">
+        <div className="mt-8 pt-6 border-t-2 border-[rgb(230,200,80)] text-center">
           <p className="text-[rgb(160,160,160)] text-xs">
             SCP FOUNDATION - RECORDKEEPING AND INFORMATION SECURITY ADMINISTRATION (RAISA)
           </p>
           <p className="text-[rgb(160,160,160)] text-xs mt-1">
             Equal Opportunity Employer • All positions subject to security clearance requirements
           </p>
-          <p className="text-[rgb(139,34,34)] text-xs mt-2 font-bold">
+          <p className="text-[rgb(230,200,80)] text-xs mt-2 font-bold">
             INTERNAL USE ONLY - FOUNDATION PERSONNEL ONLY
           </p>
         </div>
@@ -629,9 +629,9 @@ export default function Careers() {
       {/* Application Form Modal */}
       {showForm && selectedJob && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4 overflow-y-auto">
-          <div className="bg-[rgb(28,28,28)] border-4 border-[rgb(139,34,34)] max-w-3xl w-full my-8 shadow-[0_0_30px_rgba(139,34,34,0.5)]">
+          <div className="bg-[rgb(28,28,28)] border-4 border-[rgb(230,200,80)] max-w-3xl w-full my-8 shadow-[0_0_30px_rgba(230,200,80,0.5)]">
             {/* Modal Header */}
-            <div className="bg-[rgb(139,34,34)] px-6 py-4 flex items-center justify-between">
+            <div className="bg-[rgb(230,200,80)] px-6 py-4 flex items-center justify-between">
               <div>
                 <h3 className="text-xl font-bold text-white">TRANSFER REQUEST FORM</h3>
                 <p className="text-sm text-white/80 mt-1">Form ID: RAISA-TR-{selectedJob.id}</p>
@@ -650,19 +650,19 @@ export default function Careers() {
                   {/* Position Applied For */}
                   <div className="bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] p-4 mb-6">
                     <p className="text-xs text-[rgb(160,160,160)] mb-1">POSITION APPLIED FOR</p>
-                    <p className="text-lg font-bold text-[rgb(139,34,34)]">{selectedJob.title}</p>
+                    <p className="text-lg font-bold text-[rgb(230,200,80)]">{selectedJob.title}</p>
                     <p className="text-sm text-[rgb(220,220,220)]">{selectedJob.division} • {selectedJob.id}</p>
                   </div>
 
                   {/* Personal Information */}
                   <div className="mb-6">
-                    <h4 className="text-sm font-bold text-[rgb(139,34,34)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
+                    <h4 className="text-sm font-bold text-[rgb(230,200,80)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
                       ■ PERSONAL INFORMATION
                     </h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          FULL NAME <span className="text-[rgb(139,34,34)]">*</span>
+                          FULL NAME <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="text"
@@ -670,13 +670,13 @@ export default function Careers() {
                           value={formData.fullName}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                           placeholder="Enter full name"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          EMPLOYEE ID <span className="text-[rgb(139,34,34)]">*</span>
+                          EMPLOYEE ID <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="text"
@@ -684,13 +684,13 @@ export default function Careers() {
                           value={formData.employeeId}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                           placeholder="e.g., EMP-12345"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          EMAIL ADDRESS <span className="text-[rgb(139,34,34)]">*</span>
+                          EMAIL ADDRESS <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="email"
@@ -698,13 +698,13 @@ export default function Careers() {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                           placeholder="email@foundation.scp"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          PHONE EXTENSION <span className="text-[rgb(139,34,34)]">*</span>
+                          PHONE EXTENSION <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="text"
@@ -712,7 +712,7 @@ export default function Careers() {
                           value={formData.phone}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                           placeholder="e.g., 6-2472"
                         />
                       </div>
@@ -721,13 +721,13 @@ export default function Careers() {
 
                   {/* Current Assignment */}
                   <div className="mb-6">
-                    <h4 className="text-sm font-bold text-[rgb(139,34,34)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
+                    <h4 className="text-sm font-bold text-[rgb(230,200,80)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
                       ■ CURRENT ASSIGNMENT
                     </h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          CURRENT SITE <span className="text-[rgb(139,34,34)]">*</span>
+                          CURRENT SITE <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="text"
@@ -735,13 +735,13 @@ export default function Careers() {
                           value={formData.currentSite}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                           placeholder="e.g., Site-19"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          CURRENT DEPARTMENT <span className="text-[rgb(139,34,34)]">*</span>
+                          CURRENT DEPARTMENT <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="text"
@@ -749,20 +749,20 @@ export default function Careers() {
                           value={formData.currentDepartment}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                           placeholder="e.g., Research Division"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          CLEARANCE LEVEL <span className="text-[rgb(139,34,34)]">*</span>
+                          CLEARANCE LEVEL <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <select
                           name="clearanceLevel"
                           value={formData.clearanceLevel}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         >
                           <option value="">Select Level</option>
                           <option value="1">Level 1</option>
@@ -774,7 +774,7 @@ export default function Careers() {
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          YEARS OF SERVICE <span className="text-[rgb(139,34,34)]">*</span>
+                          YEARS OF SERVICE <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="number"
@@ -783,7 +783,7 @@ export default function Careers() {
                           onChange={handleInputChange}
                           required
                           min="0"
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                           placeholder="Years"
                         />
                       </div>
@@ -792,12 +792,12 @@ export default function Careers() {
 
                   {/* Supervisor Information */}
                   <div className="mb-6">
-                    <h4 className="text-sm font-bold text-[rgb(139,34,34)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
+                    <h4 className="text-sm font-bold text-[rgb(230,200,80)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
                       ■ SUPERVISOR INFORMATION
                     </h4>
                     <div>
                       <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                        CURRENT SUPERVISOR NAME <span className="text-[rgb(139,34,34)]">*</span>
+                        CURRENT SUPERVISOR NAME <span className="text-[rgb(230,200,80)]">*</span>
                       </label>
                       <input
                         type="text"
@@ -805,7 +805,7 @@ export default function Careers() {
                         value={formData.supervisor}
                         onChange={handleInputChange}
                         required
-                        className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                        className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         placeholder="Supervisor's full name"
                       />
                       <p className="text-xs text-[rgb(160,160,160)] mt-2">
@@ -816,13 +816,13 @@ export default function Careers() {
 
                   {/* Transfer Details */}
                   <div className="mb-6">
-                    <h4 className="text-sm font-bold text-[rgb(139,34,34)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
+                    <h4 className="text-sm font-bold text-[rgb(230,200,80)] mb-4 border-b border-[rgb(100,100,100)] pb-2">
                       ■ TRANSFER DETAILS
                     </h4>
                     <div className="space-y-4">
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          AVAILABILITY DATE <span className="text-[rgb(139,34,34)]">*</span>
+                          AVAILABILITY DATE <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <input
                           type="date"
@@ -830,12 +830,12 @@ export default function Careers() {
                           value={formData.availability}
                           onChange={handleInputChange}
                           required
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none"
                         />
                       </div>
                       <div>
                         <label className="block text-xs text-[rgb(160,160,160)] mb-2">
-                          REASON FOR TRANSFER REQUEST <span className="text-[rgb(139,34,34)]">*</span>
+                          REASON FOR TRANSFER REQUEST <span className="text-[rgb(230,200,80)]">*</span>
                         </label>
                         <textarea
                           name="reason"
@@ -843,7 +843,7 @@ export default function Careers() {
                           onChange={handleInputChange}
                           required
                           rows={4}
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none resize-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none resize-none"
                           placeholder="Explain why you are interested in transferring to this position..."
                         />
                       </div>
@@ -856,7 +856,7 @@ export default function Careers() {
                           value={formData.additionalInfo}
                           onChange={handleInputChange}
                           rows={3}
-                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(139,34,34)] focus:outline-none resize-none"
+                          className="w-full bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] text-[rgb(220,220,220)] px-3 py-2 text-sm focus:border-[rgb(230,200,80)] focus:outline-none resize-none"
                           placeholder="Any additional qualifications or information you'd like to share..."
                         />
                       </div>
@@ -864,7 +864,7 @@ export default function Careers() {
                   </div>
 
                   {/* Disclaimer */}
-                  <div className="bg-[rgb(17,17,17)] border-l-4 border-[rgb(139,34,34)] p-4 mb-6">
+                  <div className="bg-[rgb(17,17,17)] border-l-4 border-[rgb(230,200,80)] p-4 mb-6">
                     <p className="text-xs text-[rgb(220,220,220)] leading-relaxed">
                       By submitting this transfer request, I acknowledge that all information provided is accurate 
                       and complete. I understand that this request is subject to approval from both my current 
@@ -877,7 +877,7 @@ export default function Careers() {
                   <div className="flex gap-4">
                     <button
                       type="submit"
-                      className="flex-1 bg-[rgb(139,34,34)] hover:bg-[rgb(110,25,25)] text-white font-bold py-3 px-6 text-sm transition-colors"
+                      className="flex-1 bg-[rgb(230,200,80)] hover:bg-[rgb(200,170,50)] text-white font-bold py-3 px-6 text-sm transition-colors"
                     >
                       ► SUBMIT TRANSFER REQUEST
                     </button>
@@ -893,8 +893,8 @@ export default function Careers() {
               ) : (
                 // Success Message
                 <div className="text-center py-12">
-                  <div className="text-6xl text-[rgb(139,34,34)] mb-6">✓</div>
-                  <h3 className="text-2xl font-bold text-[rgb(139,34,34)] mb-4">REQUEST SUBMITTED</h3>
+                  <div className="text-6xl text-[rgb(230,200,80)] mb-6">✓</div>
+                  <h3 className="text-2xl font-bold text-[rgb(230,200,80)] mb-4">REQUEST SUBMITTED</h3>
                   <p className="text-[rgb(220,220,220)] mb-2">
                     Your transfer request has been successfully submitted.
                   </p>
@@ -903,7 +903,7 @@ export default function Careers() {
                   </p>
                   <div className="bg-[rgb(17,17,17)] border border-[rgb(100,100,100)] p-4 max-w-lg mx-auto text-left">
                     <p className="text-xs text-[rgb(220,220,220)] leading-relaxed">
-                      <strong className="text-[rgb(139,34,34)]">NEXT STEPS:</strong><br/>
+                      <strong className="text-[rgb(230,200,80)]">NEXT STEPS:</strong><br/>
                       • RAISA HR will review your application within 5-7 business days<br/>
                       • Your current supervisor will be contacted for approval<br/>
                       • You will be notified via internal email regarding next steps<br/>
@@ -912,7 +912,7 @@ export default function Careers() {
                   </div>
                   <button
                     onClick={handleCloseForm}
-                    className="mt-6 bg-[rgb(139,34,34)] hover:bg-[rgb(110,25,25)] text-white font-bold py-3 px-6 text-sm transition-colors"
+                    className="mt-6 bg-[rgb(230,200,80)] hover:bg-[rgb(200,170,50)] text-white font-bold py-3 px-6 text-sm transition-colors"
                   >
                     CLOSE
                   </button>

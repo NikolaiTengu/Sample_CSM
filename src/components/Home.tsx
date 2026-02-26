@@ -60,12 +60,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[rgb(17,17,17)]">
       {/* Top Security Banner */}
-      <div className="bg-[rgb(139,34,34)] text-white text-center py-1 text-xs font-bold tracking-widest">
+      <div className="bg-[rgb(230,200,80)] text-white text-center py-1 text-xs font-bold tracking-widest">
         ⚠ CLASSIFIED - LEVEL 2 CLEARANCE REQUIRED ⚠
       </div>
 
       {/* Header */}
-      <header className="bg-[rgb(28,28,28)] border-b-4 border-[rgb(139,34,34)] shadow-[0_0_20px_rgba(139,34,34,0.3)]">
+      <header className="bg-[rgb(28,28,28)] border-b-4 border-[rgb(230,200,80)] shadow-[0_0_20px_rgba(230,200,80,0.3)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div className="flex items-center gap-6">
@@ -74,10 +74,10 @@ export default function Home() {
                 alt="RAISA Logo" 
                 width={80} 
                 height={80}
-                className="filter drop-shadow-[0_0_10px_rgba(139,34,34,0.5)]"
+                className="filter drop-shadow-[0_0_10px_rgba(230,200,80,0.5)]"
               />
               <div>
-                <h1 className="text-2xl md:text-3xl font-bold text-[rgb(139,34,34)] scp-header">
+                <h1 className="text-2xl md:text-3xl font-bold text-[rgb(230,200,80)] scp-header">
                   SCP FOUNDATION
                 </h1>
                 <p className="text-sm md:text-base text-[rgb(160,160,160)] mt-1 tracking-wide">
@@ -92,7 +92,7 @@ export default function Home() {
               <div className="classified-stamp mb-2">CLASSIFIED</div>
               <p className="text-xs text-[rgb(160,160,160)]">ACCESS LEVEL</p>
               <p className="text-lg font-semibold text-[rgb(240,240,240)] tracking-wider">LEVEL 2</p>
-              <p className="text-xs text-[rgb(139,34,34)] font-bold mt-1">AUTHORIZED</p>
+              <p className="text-xs text-[rgb(230,200,80)] font-bold mt-1">AUTHORIZED</p>
             </div>
           </div>
         </div>
@@ -101,9 +101,9 @@ export default function Home() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Welcome Section */}
-        <div className="scp-card p-8 mb-8 border-2 border-[rgb(139,34,34)]">
+        <div className="scp-card p-8 mb-8 border-2 border-[rgb(230,200,80)]">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-[rgb(139,34,34)] scp-header mb-4">
+            <h2 className="text-3xl font-bold text-[rgb(230,200,80)] scp-header mb-4">
               WELCOME TO RAISA
             </h2>
             <p className="text-lg text-[rgb(220,220,220)] leading-relaxed max-w-3xl mx-auto">
@@ -111,8 +111,8 @@ export default function Home() {
               central authority for information management, database security, and classified 
               documentation across all global facilities.
             </p>
-            <div className="mt-6 inline-block bg-[rgb(28,28,28)] border-2 border-[rgb(139,34,34)] px-6 py-3">
-              <p className="text-sm text-[rgb(139,34,34)] font-bold">
+            <div className="mt-6 inline-block bg-[rgb(28,28,28)] border-2 border-[rgb(230,200,80)] px-6 py-3">
+              <p className="text-sm text-[rgb(230,200,80)] font-bold">
                 Your clearance level grants you access to general RAISA information and services
               </p>
             </div>
@@ -122,26 +122,26 @@ export default function Home() {
         {/* Key Statistics */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           <div className="scp-card p-6 text-center">
-            <div className="text-4xl font-bold text-[rgb(139,34,34)] mb-2">70+</div>
+            <div className="text-4xl font-bold text-[rgb(230,200,80)] mb-2">70+</div>
             <div className="text-xs text-[rgb(160,160,160)]">YEARS OF SERVICE</div>
           </div>
           <div className="scp-card p-6 text-center">
-            <div className="text-4xl font-bold text-[rgb(139,34,34)] mb-2">24</div>
+            <div className="text-4xl font-bold text-[rgb(230,200,80)] mb-2">24</div>
             <div className="text-xs text-[rgb(160,160,160)]">PERSONNEL</div>
           </div>
           <div className="scp-card p-6 text-center">
-            <div className="text-4xl font-bold text-[rgb(139,34,34)] mb-2">6</div>
+            <div className="text-4xl font-bold text-[rgb(230,200,80)] mb-2">6</div>
             <div className="text-xs text-[rgb(160,160,160)]">DIVISIONS</div>
           </div>
           <div className="scp-card p-6 text-center">
-            <div className="text-4xl font-bold text-[rgb(139,34,34)] mb-2">24/7</div>
+            <div className="text-4xl font-bold text-[rgb(230,200,80)] mb-2">24/7</div>
             <div className="text-xs text-[rgb(160,160,160)]">OPERATIONS</div>
           </div>
         </div>
 
         {/* Quick Access Links */}
         <div className="mb-8">
-          <h2 className="text-xl font-bold text-[rgb(139,34,34)] scp-header mb-4 flex items-center gap-2">
+          <h2 className="text-xl font-bold text-[rgb(230,200,80)] scp-header mb-4 flex items-center gap-2">
             <span className="text-2xl">■</span> QUICK ACCESS
           </h2>
           
@@ -149,15 +149,15 @@ export default function Home() {
             {quickLinks.map((link, index) => (
               <div 
                 key={index} 
-                className="scp-card p-5 hover:border-[rgb(139,34,34)] transition-colors cursor-pointer"
+                className="scp-card p-5 hover:border-[rgb(230,200,80)] transition-colors cursor-pointer"
               >
                 <div className="flex items-start gap-4">
-                  <div className="text-3xl text-[rgb(139,34,34)]">{link.icon}</div>
+                  <div className="text-3xl text-[rgb(230,200,80)]">{link.icon}</div>
                   <div className="flex-1">
                     <h3 className="text-base font-bold text-[rgb(220,220,220)] mb-2">{link.title}</h3>
                     <p className="text-xs text-[rgb(160,160,160)] mb-3">{link.description}</p>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs bg-[rgb(139,34,34)] text-white px-2 py-1 font-bold">
+                      <span className="text-xs bg-[rgb(230,200,80)] text-white px-2 py-1 font-bold">
                         LEVEL {link.clearance}
                       </span>
                       {link.clearance <= 2 ? (
@@ -176,7 +176,7 @@ export default function Home() {
         {/* Announcements and Updates */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
           <div className="lg:col-span-2">
-            <h2 className="text-xl font-bold text-[rgb(139,34,34)] scp-header mb-4 flex items-center gap-2">
+            <h2 className="text-xl font-bold text-[rgb(230,200,80)] scp-header mb-4 flex items-center gap-2">
               <span className="text-2xl">■</span> ANNOUNCEMENTS
             </h2>
             
@@ -191,7 +191,7 @@ export default function Home() {
                       <p className="text-xs text-[rgb(160,160,160)]">{announcement.date}</p>
                     </div>
                     {announcement.priority === 'high' && (
-                      <span className="text-xs bg-[rgb(139,34,34)] text-white px-3 py-1 font-bold">
+                      <span className="text-xs bg-[rgb(230,200,80)] text-white px-3 py-1 font-bold">
                         HIGH PRIORITY
                       </span>
                     )}
@@ -205,13 +205,13 @@ export default function Home() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-[rgb(139,34,34)] scp-header mb-4 flex items-center gap-2">
+            <h2 className="text-xl font-bold text-[rgb(230,200,80)] scp-header mb-4 flex items-center gap-2">
               <span className="text-2xl">■</span> RAISA SERVICES
             </h2>
             
             <div className="space-y-4">
               <div className="scp-card p-4">
-                <h3 className="text-sm font-bold text-[rgb(139,34,34)] mb-2">Document Retrieval</h3>
+                <h3 className="text-sm font-bold text-[rgb(230,200,80)] mb-2">Document Retrieval</h3>
                 <p className="text-xs text-[rgb(220,220,220)] mb-2">
                   Access archived documents and classified records
                 </p>
@@ -219,7 +219,7 @@ export default function Home() {
               </div>
 
               <div className="scp-card p-4">
-                <h3 className="text-sm font-bold text-[rgb(139,34,34)] mb-2">Technical Support</h3>
+                <h3 className="text-sm font-bold text-[rgb(230,200,80)] mb-2">Technical Support</h3>
                 <p className="text-xs text-[rgb(220,220,220)] mb-2">
                   Database access and system assistance
                 </p>
@@ -227,7 +227,7 @@ export default function Home() {
               </div>
 
               <div className="scp-card p-4">
-                <h3 className="text-sm font-bold text-[rgb(139,34,34)] mb-2">Security Services</h3>
+                <h3 className="text-sm font-bold text-[rgb(230,200,80)] mb-2">Security Services</h3>
                 <p className="text-xs text-[rgb(220,220,220)] mb-2">
                   Clearance verification and access requests
                 </p>
@@ -235,7 +235,7 @@ export default function Home() {
               </div>
 
               <div className="scp-card p-4">
-                <h3 className="text-sm font-bold text-[rgb(139,34,34)] mb-2">Information Security</h3>
+                <h3 className="text-sm font-bold text-[rgb(230,200,80)] mb-2">Information Security</h3>
                 <p className="text-xs text-[rgb(220,220,220)] mb-2">
                   Report breaches and security concerns
                 </p>
@@ -247,11 +247,11 @@ export default function Home() {
 
         {/* RAISA Mission Statement */}
         <div className="scp-card p-6 mb-8">
-          <h2 className="text-xl font-bold text-[rgb(139,34,34)] scp-header mb-4 flex items-center gap-2">
+          <h2 className="text-xl font-bold text-[rgb(230,200,80)] scp-header mb-4 flex items-center gap-2">
             <span className="text-2xl">■</span> OUR MISSION
           </h2>
           
-          <div className="bg-[rgb(28,28,28)] border-l-4 border-[rgb(139,34,34)] p-6">
+          <div className="bg-[rgb(28,28,28)] border-l-4 border-[rgb(230,200,80)] p-6">
             <p className="text-base text-[rgb(220,220,220)] leading-relaxed italic">
               "To secure, preserve, and control access to all classified information within the SCP Foundation 
               while maintaining the integrity and availability of critical documentation in support of global 
@@ -261,22 +261,22 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             <div className="text-center">
-              <div className="text-4xl text-[rgb(139,34,34)] mb-3">⚔</div>
-              <h3 className="text-sm font-bold text-[rgb(139,34,34)] mb-2">VIGILANCE</h3>
+              <div className="text-4xl text-[rgb(230,200,80)] mb-3">⚔</div>
+              <h3 className="text-sm font-bold text-[rgb(230,200,80)] mb-2">VIGILANCE</h3>
               <p className="text-xs text-[rgb(220,220,220)]">
                 Constant awareness of security threats
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl text-[rgb(139,34,34)] mb-3">⚖</div>
-              <h3 className="text-sm font-bold text-[rgb(139,34,34)] mb-2">INTEGRITY</h3>
+              <div className="text-4xl text-[rgb(230,200,80)] mb-3">⚖</div>
+              <h3 className="text-sm font-bold text-[rgb(230,200,80)] mb-2">INTEGRITY</h3>
               <p className="text-xs text-[rgb(220,220,220)]">
                 Highest ethical standards maintained
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl text-[rgb(139,34,34)] mb-3">⚙</div>
-              <h3 className="text-sm font-bold text-[rgb(139,34,34)] mb-2">EXCELLENCE</h3>
+              <div className="text-4xl text-[rgb(230,200,80)] mb-3">⚙</div>
+              <h3 className="text-sm font-bold text-[rgb(230,200,80)] mb-2">EXCELLENCE</h3>
               <p className="text-xs text-[rgb(220,220,220)]">
                 Perfection in information security
               </p>
@@ -285,15 +285,15 @@ export default function Home() {
         </div>
 
         {/* Emergency Contact */}
-        <div className="scp-card p-6 border-2 border-[rgb(139,34,34)] mb-8">
+        <div className="scp-card p-6 border-2 border-[rgb(230,200,80)] mb-8">
           <div className="text-center">
-            <div className="text-5xl text-[rgb(139,34,34)] mb-4">⚠</div>
-            <h2 className="text-xl font-bold text-[rgb(139,34,34)] mb-3">EMERGENCY CONTACT</h2>
+            <div className="text-5xl text-[rgb(230,200,80)] mb-4">⚠</div>
+            <h2 className="text-xl font-bold text-[rgb(230,200,80)] mb-3">EMERGENCY CONTACT</h2>
             <p className="text-sm text-[rgb(220,220,220)] mb-4">
               For security breaches, critical system failures, or urgent containment-related information needs:
             </p>
-            <div className="inline-block bg-[rgb(28,28,28)] border border-[rgb(139,34,34)] px-8 py-4">
-              <p className="text-lg font-bold text-[rgb(139,34,34)] mb-2">RAISA EMERGENCY HOTLINE</p>
+            <div className="inline-block bg-[rgb(28,28,28)] border border-[rgb(230,200,80)] px-8 py-4">
+              <p className="text-lg font-bold text-[rgb(230,200,80)] mb-2">RAISA EMERGENCY HOTLINE</p>
               <p className="text-2xl font-bold text-[rgb(220,220,220)]">6-9911</p>
               <p className="text-xs text-[rgb(160,160,160)] mt-2">IMMEDIATE RESPONSE • 24/7</p>
             </div>
@@ -301,33 +301,33 @@ export default function Home() {
         </div>
 
         {/* Access Notice */}
-        <div className="bg-[rgb(28,28,28)] border-l-4 border-[rgb(139,34,34)] p-6 mb-8">
-          <h3 className="text-sm font-bold text-[rgb(139,34,34)] mb-3">ACCESS REQUIREMENTS</h3>
+        <div className="bg-[rgb(28,28,28)] border-l-4 border-[rgb(230,200,80)] p-6 mb-8">
+          <h3 className="text-sm font-bold text-[rgb(230,200,80)] mb-3">ACCESS REQUIREMENTS</h3>
           <div className="space-y-2 text-xs text-[rgb(220,220,220)]">
             <p>
-              <span className="text-[rgb(139,34,34)]">▸</span> Level 2 clearance grants access to general RAISA information, contact services, and career opportunities
+              <span className="text-[rgb(230,200,80)]">▸</span> Level 2 clearance grants access to general RAISA information, contact services, and career opportunities
             </p>
             <p>
-              <span className="text-[rgb(139,34,34)]">▸</span> Level 3+ clearance required for detailed operational data and client satisfaction metrics
+              <span className="text-[rgb(230,200,80)]">▸</span> Level 3+ clearance required for detailed operational data and client satisfaction metrics
             </p>
             <p>
-              <span className="text-[rgb(139,34,34)]">▸</span> Level 4+ clearance required for personnel directory, departmental details, and strategic documentation
+              <span className="text-[rgb(230,200,80)]">▸</span> Level 4+ clearance required for personnel directory, departmental details, and strategic documentation
             </p>
             <p>
-              <span className="text-[rgb(139,34,34)]">▸</span> All access is logged and monitored for security purposes
+              <span className="text-[rgb(230,200,80)]">▸</span> All access is logged and monitored for security purposes
             </p>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mt-8 pt-6 border-t-2 border-[rgb(139,34,34)] text-center">
+        <div className="mt-8 pt-6 border-t-2 border-[rgb(230,200,80)] text-center">
           <p className="text-[rgb(160,160,160)] text-xs">
             SCP FOUNDATION - RECORDKEEPING AND INFORMATION SECURITY ADMINISTRATION (RAISA)
           </p>
           <p className="text-[rgb(160,160,160)] text-xs mt-1">
             This portal is the property of the SCP Foundation. Unauthorized access is prohibited.
           </p>
-          <p className="text-[rgb(139,34,34)] text-xs mt-2 font-bold">
+          <p className="text-[rgb(230,200,80)] text-xs mt-2 font-bold">
             CLASSIFIED MATERIAL - LEVEL 2 CLEARANCE
           </p>
           <p className="text-[rgb(160,160,160)] text-xs mt-4">

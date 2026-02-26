@@ -15,7 +15,7 @@ interface SatisfactionChartProps {
 export default function SatisfactionChart({ data }: SatisfactionChartProps) {
   return (
     <div className="scp-card p-6">
-      <h2 className="text-xl font-bold text-[rgb(139,34,34)] scp-header mb-6 flex items-center gap-2">
+      <h2 className="text-xl font-bold text-[rgb(230,200,80)] scp-header mb-6 flex items-center gap-2">
         <span className="text-2xl">■</span> SATISFACTION TREND ANALYSIS
       </h2>
       <p className="text-xs text-[rgb(160,160,160)] mb-4 tracking-wider">TEMPORAL METRICS: LAST 7 MONTHS</p>
@@ -35,11 +35,11 @@ export default function SatisfactionChart({ data }: SatisfactionChartProps) {
           <Tooltip
             contentStyle={{
               backgroundColor: 'rgb(28,28,28)',
-              border: '2px solid rgb(139,34,34)',
+              border: '2px solid rgb(230,200,80)',
               borderRadius: '0',
               color: 'rgb(240,240,240)',
               fontFamily: 'Courier Prime, monospace',
-              boxShadow: '0 0 20px rgba(139,34,34,0.3)',
+              boxShadow: '0 0 20px rgba(230,200,80,0.3)',
             }}
           />
           <Legend 
@@ -52,10 +52,10 @@ export default function SatisfactionChart({ data }: SatisfactionChartProps) {
           <Line
             type="monotone"
             dataKey="score"
-            stroke="rgb(139,34,34)"
+            stroke="rgb(230,200,80)"
             strokeWidth={3}
-            dot={{ fill: 'rgb(139,34,34)', r: 5, strokeWidth: 2, stroke: 'rgb(240,240,240)' }}
-            activeDot={{ r: 7, stroke: 'rgb(139,34,34)', strokeWidth: 3 }}
+            dot={{ fill: 'rgb(230,200,80)', r: 5, strokeWidth: 2, stroke: 'rgb(240,240,240)' }}
+            activeDot={{ r: 7, stroke: 'rgb(230,200,80)', strokeWidth: 3 }}
             name="AVG SCORE"
           />
         </LineChart>
