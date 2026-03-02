@@ -9,10 +9,11 @@ import Mission from '@/components/Mission'
 import Vision from '@/components/Vision'
 import Careers from '@/components/Careers'
 import ContactUs from '@/components/ContactUs'
+import EthicsCommittee from '@/components/EthicsCommittee'
 import Navigation from '@/components/Navigation'
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<'home' | 'csm' | 'department' | 'about' | 'mission' | 'vision' | 'careers' | 'contact'>('home')
+  const [activeTab, setActiveTab] = useState<'home' | 'csm' | 'department' | 'ethics' | 'about' | 'mission' | 'vision' | 'careers' | 'contact'>('home')
 
   const renderContent = () => {
     switch (activeTab) {
@@ -22,6 +23,8 @@ export default function Home() {
         return <Dashboard />
       case 'department':
         return <DepartmentDashboard />
+      case 'ethics':
+        return <EthicsCommittee />
       case 'about':
         return <AboutUs />
       case 'mission':

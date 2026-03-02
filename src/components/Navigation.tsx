@@ -3,8 +3,8 @@
 import { useState } from 'react'
 
 interface NavigationProps {
-  activeTab: 'home' | 'csm' | 'department' | 'about' | 'mission' | 'vision' | 'careers' | 'contact';
-  onTabChange: (tab: 'home' | 'csm' | 'department' | 'about' | 'mission' | 'vision' | 'careers' | 'contact') => void;
+  activeTab: 'home' | 'csm' | 'department' | 'ethics' | 'about' | 'mission' | 'vision' | 'careers' | 'contact';
+  onTabChange: (tab: 'home' | 'csm' | 'department' | 'ethics' | 'about' | 'mission' | 'vision' | 'careers' | 'contact') => void;
 }
 
 export default function Navigation({ activeTab, onTabChange }: NavigationProps) {
@@ -44,6 +44,16 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
             }`}
           >
             ◈ DEPARTMENT
+          </button>
+          <button
+            onClick={() => onTabChange('ethics')}
+            className={`px-6 py-3 text-sm font-bold tracking-wider transition-all whitespace-nowrap ${
+              activeTab === 'ethics'
+                ? 'bg-[rgb(230,200,80)] text-white border-t-2 border-[rgb(230,200,80)]'
+                : 'bg-[rgb(17,17,17)] text-[rgb(160,160,160)] hover:text-[rgb(220,220,220)] hover:bg-[rgb(28,28,28)]'
+            }`}
+          >
+            ◈ ETHICS COMMITTEE
           </button>
           <button
             onClick={() => onTabChange('about')}
