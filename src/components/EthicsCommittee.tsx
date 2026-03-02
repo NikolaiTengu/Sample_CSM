@@ -61,7 +61,7 @@ export default function EthicsCommittee() {
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div className="flex items-center gap-6">
               <Image 
-                src="/pictures/Ethics_Comittee.png" 
+                src="https://static.wikia.nocookie.net/scp-db/images/b/b1/Ethics_Committee.png/revision/latest/scale-to-width-down/1000?cb=20240405220958" 
                 alt="Ethics Committee Logo" 
                 width={80} 
                 height={80}

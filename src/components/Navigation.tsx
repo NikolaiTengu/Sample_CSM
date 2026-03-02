@@ -1,10 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
 interface NavigationProps {
-  activeTab: 'home' | 'csm' | 'department' | 'ethics' | 'about' | 'mission' | 'vision' | 'careers' | 'contact';
-  onTabChange: (tab: 'home' | 'csm' | 'department' | 'ethics' | 'about' | 'mission' | 'vision' | 'careers' | 'contact') => void;
+  activeTab: 'home' | 'csm' | 'department' | 'foundation' | 'ethics' | 'about' | 'mission' | 'vision' | 'careers' | 'contact';
+  onTabChange: (tab: 'home' | 'csm' | 'department' | 'foundation' | 'ethics' | 'about' | 'mission' | 'vision' | 'careers' | 'contact') => void;
 }
 
 export default function Navigation({ activeTab, onTabChange }: NavigationProps) {
@@ -23,7 +24,50 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
     <div className="bg-[rgb(28,28,28)] border-b-2 border-[rgb(230,200,80)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4 py-3">
-          {/* Navigation Tabs */}
+          {/* Separate Organization Logos */}
+          <div className="flex items-center gap-4 flex-shrink-0">
+            {/* SCP Foundation Logo */}
+            <button
+              onClick={() => onTabChange('foundation')}
+              className="group relative"
+              title="SCP Foundation Overview"
+            >
+              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[rgb(100,100,100)] group-hover:border-[rgb(230,200,80)] transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(230,200,80,0.5)]">
+                <Image
+                  src="https://static.wikia.nocookie.net/scp-db/images/c/c9/SCP_Foundation.png/revision/latest/scale-to-width-down/1000?cb=20250512065502"
+                  alt="SCP Foundation"
+                  width={48}
+                  height={48}
+                  className="object-cover"
+                />
+              </div>
+              {activeTab === 'foundation' && (
+                <div className="absolute -bottom-1 left-0 right-0 h-1 bg-[rgb(230,200,80)] shadow-[0_0_8px_rgba(230,200,80,0.8)]"></div>
+              )}
+            </button>
+
+            {/* Ethics Committee Logo */}
+            <button
+              onClick={() => onTabChange('ethics')}
+              className="group relative"
+              title="Ethics Committee"
+            >
+              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[rgb(100,100,100)] group-hover:border-[rgb(230,200,80)] transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(230,200,80,0.5)]">
+                <Image
+                  src="https://static.wikia.nocookie.net/scp-db/images/b/b1/Ethics_Committee.png/revision/latest/scale-to-width-down/1000?cb=20240405220958"
+                  alt="Ethics Committee"
+                  width={48}
+                  height={48}
+                  className="object-cover"
+                />
+              </div>
+              {activeTab === 'ethics' && (
+                <div className="absolute -bottom-1 left-0 right-0 h-1 bg-[rgb(230,200,80)] shadow-[0_0_8px_rgba(230,200,80,0.8)]"></div>
+              )}
+            </button>
+          </div>
+
+          {/* RAISA Navigation Tabs */}
           <div className="flex gap-2 overflow-x-auto flex-1">
           <button
             onClick={() => onTabChange('home')}
@@ -44,16 +88,6 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
             }`}
           >
             ◈ DEPARTMENT
-          </button>
-          <button
-            onClick={() => onTabChange('ethics')}
-            className={`px-6 py-3 text-sm font-bold tracking-wider transition-all whitespace-nowrap ${
-              activeTab === 'ethics'
-                ? 'bg-[rgb(230,200,80)] text-white border-t-2 border-[rgb(230,200,80)]'
-                : 'bg-[rgb(17,17,17)] text-[rgb(160,160,160)] hover:text-[rgb(220,220,220)] hover:bg-[rgb(28,28,28)]'
-            }`}
-          >
-            ◈ ETHICS COMMITTEE
           </button>
           <button
             onClick={() => onTabChange('about')}
