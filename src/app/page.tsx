@@ -11,10 +11,11 @@ import Careers from '@/components/Careers'
 import ContactUs from '@/components/ContactUs'
 import EthicsCommittee from '@/components/EthicsCommittee'
 import FoundationOverview from '@/components/FoundationOverview'
+import SpicyCrustPizzeria from '@/components/SpicyCrustPizzeria'
 import Navigation from '@/components/Navigation'
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<'home' | 'csm' | 'department' | 'foundation' | 'ethics' | 'about' | 'mission' | 'vision' | 'careers' | 'contact'>('home')
+  const [activeTab, setActiveTab] = useState<'home' | 'csm' | 'department' | 'foundation' | 'ethics' | 'pizzeria' | 'about' | 'mission' | 'vision' | 'careers' | 'contact'>('home')
 
   const renderContent = () => {
     switch (activeTab) {
@@ -28,6 +29,8 @@ export default function Home() {
         return <FoundationOverview />
       case 'ethics':
         return <EthicsCommittee />
+      case 'pizzeria':
+        return <SpicyCrustPizzeria />
       case 'about':
         return <AboutUs />
       case 'mission':

@@ -4,8 +4,8 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 interface NavigationProps {
-  activeTab: 'home' | 'csm' | 'department' | 'foundation' | 'ethics' | 'about' | 'mission' | 'vision' | 'careers' | 'contact';
-  onTabChange: (tab: 'home' | 'csm' | 'department' | 'foundation' | 'ethics' | 'about' | 'mission' | 'vision' | 'careers' | 'contact') => void;
+  activeTab: 'home' | 'csm' | 'department' | 'foundation' | 'ethics' | 'pizzeria' | 'about' | 'mission' | 'vision' | 'careers' | 'contact';
+  onTabChange: (tab: 'home' | 'csm' | 'department' | 'foundation' | 'ethics' | 'pizzeria' | 'about' | 'mission' | 'vision' | 'careers' | 'contact') => void;
 }
 
 export default function Navigation({ activeTab, onTabChange }: NavigationProps) {
@@ -62,6 +62,26 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
                 />
               </div>
               {activeTab === 'ethics' && (
+                <div className="absolute -bottom-1 left-0 right-0 h-1 bg-[rgb(230,200,80)] shadow-[0_0_8px_rgba(230,200,80,0.8)]"></div>
+              )}
+            </button>
+
+            {/* Spicy Crust Pizzeria Logo */}
+            <button
+              onClick={() => onTabChange('pizzeria')}
+              className="group relative"
+              title="Spicy Crust Pizzeria"
+            >
+              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[rgb(100,100,100)] group-hover:border-[rgb(230,200,80)] transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(230,200,80,0.5)]">
+                <Image
+                  src="https://scp-wiki.wdfiles.com/local--files/departments/spicy-crust-pizzeria.png"
+                  alt="Spicy Crust Pizzeria"
+                  width={48}
+                  height={48}
+                  className="object-cover"
+                />
+              </div>
+              {activeTab === 'pizzeria' && (
                 <div className="absolute -bottom-1 left-0 right-0 h-1 bg-[rgb(230,200,80)] shadow-[0_0_8px_rgba(230,200,80,0.8)]"></div>
               )}
             </button>
